@@ -4,7 +4,7 @@ jdk:
 
 addons:
   sonarcloud:
-    organization: AleDiFi
+    organization: "aledifi"
     token:
       secure: 9134a1e4c0d7d9ba3284e8b7d6fef9fa376a7c7b
 script:
