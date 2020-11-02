@@ -7,7 +7,7 @@ script:
 
 addons:
     sonarcloud:
-        organization: AleDiFi
+        organization: aledifi
         token:
             secure: travis encrypt 9b5c0e5f02273e4a11503319ffc4d8fbb40a4671
 
