@@ -1,15 +1,13 @@
 language: java
 jdk:
-    -openjdk8
-script: 
-    - ant build
-    - sonar-scanner
-    - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
-
+  - openjdk8
 addons:
   sonarcloud:
-    organization: "aledifi"
+    organization: AleDiFi
     token:
-      secure: "9134a1e4c0d7d9ba3284e8b7d6fef9fa376a7c7b" # encrypted value of your token
+      secure: 9134a1e4c0d7d9ba3284e8b7d6fef9fa376a7c7b
+script:
+  - ant build
+  - sonar-scanner
 
 
