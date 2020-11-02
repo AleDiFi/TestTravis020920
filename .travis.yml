@@ -4,11 +4,12 @@ jdk:
 script: 
     - ant build
     - sonar-scanner
+    - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
 
 addons:
-    sonarcloud:
-        organization: aledifi
-        token:
-            secure: travis encrypt 9b5c0e5f02273e4a11503319ffc4d8fbb40a4671
+  sonarcloud:
+    organization: "aledifi"
+    token:
+      secure: "9134a1e4c0d7d9ba3284e8b7d6fef9fa376a7c7b" # encrypted value of your token
 
 
