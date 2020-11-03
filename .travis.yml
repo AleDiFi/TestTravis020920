@@ -4,8 +4,8 @@ jdk:
 
 addons:
   sonarcloud:
-    organization: "AleDiFi"
-    token: "95a6db4e592dd653342ebbe28e240cd5eabe192f"
+    organization: AleDiFi
+    token: 95a6db4e592dd653342ebbe28e240cd5eabe192f
 
 script:
 - ant build
